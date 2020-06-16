@@ -19,6 +19,7 @@
 
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
 
 </head>
 
@@ -33,11 +34,11 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <!-- Menu Area Start -->
-                <div class="col-12 col-lg-10">
+                <div class="col-12 col-lg-7">
                     <div class="menu_area">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <!-- Logo -->
-                            <a class="navbar-brand" href="#">Ca.</a>
+                            <a class="navbar-brand" href="#">Cougar</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                             <!-- Menu Area -->
                             <div class="collapse navbar-collapse" id="ca-navbar">
@@ -45,23 +46,28 @@
                                     <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#screenshot">Screenshot</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                                 </ul>
                                 <div class="sing-up-button d-lg-none">
-                                    <a href="#">Sign Up Free</a>
+                                    <a id="register_mobile">S'inscrire</a>
+                                </div>
+                                <div class="sing-up-button d-lg-none">
+                                    <a id="login_mobile">Se connecter</a>
                                 </div>
                             </div>
                         </nav>
                     </div>
                 </div>
                 <!-- Signup btn -->
-                <div class="col-12 col-lg-2">
-                    <div class="sing-up-button d-none d-lg-block">
-                        <a href="#">Sign Up Free</a>
+                <div class="col-12 col-lg-5">
+                    <div class="sing-up-button disp-none-mobile">
+                        <a id="register_desk">S'inscrire</a>
+                    </div>
+                    <div class="sing-up-button disp-none-mobile">
+                        <a id="login_id">Se connecter</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +81,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md">
                     <div class="wellcome-heading">
-                        <h2>Colorlib app</h2>
+                        <h2>La chasse est ouverte</h2>
                         <h3>C</h3>
                         <p>Everything You Need. To Start Selling Online Beautifully</p>
                     </div>
@@ -323,46 +329,7 @@
     <!-- ***** Cool Facts Area End ***** -->
 
     <!-- ***** App Screenshots Area Start ***** -->
-    <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2>App Screenshots</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <!-- App Screenshots Slides  -->
-                    <div class="app_screenshots_slides owl-carousel">
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-1.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-2.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-3.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-4.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-5.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-3.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- ***** App Screenshots Area End *****====== -->
 
     <!-- ***** Pricing Plane Area Start *****==== -->
@@ -627,6 +594,7 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="img/team-img/team-1.jpg" alt="">
+                            <span class="status"></span>
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -646,6 +614,7 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="img/team-img/team-2.jpg" alt="">
+                            <span class="status"></span>
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -665,6 +634,7 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="img/team-img/team-3.jpg" alt="">
+                            <span class="status"></span>
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -684,6 +654,7 @@
                     <div class="single-team-member">
                         <div class="member-image">
                             <img src="img/team-img/team-4.jpg" alt="">
+                            <span class="status"></span>
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -727,41 +698,7 @@
                         <p><span>Email:</span> info.deercreative@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <!-- Form Start-->
-                    <div class="contact_from">
-                        <form action="#" method="post">
-                            <!-- Message Input Area Start -->
-                            <div class="contact_input_area">
-                                <div class="row">
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message *" required></textarea>
-                                        </div>
-                                    </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-12">
-                                        <button type="submit" class="btn submit-btn">Send Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Message Input Area End -->
-                        </form>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -771,7 +708,7 @@
     <footer class="footer-social-icon text-center section_padding_70 clearfix">
         <!-- footer logo -->
         <div class="footer-text">
-            <h2>Ca.</h2>
+            <h2>Cougar</h2>
         </div>
         <!-- social icon-->
         <div class="footer-social-icon">
@@ -792,11 +729,120 @@
         </div>
         <!-- Foooter Text-->
         <div class="copyright-text">
-            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-            <p>Copyright ©2017 Ca. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            <p>Copyright ©2017 Cougar. Designed by <a href="" target="_blank">Cougar</a></p>
         </div>
     </footer>
     <!-- ***** Footer Area Start ***** -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Inscription</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <!-- Form Start-->
+                        <div class="contact_from">
+                            <form action="#" method="post">
+                                <!-- Message Input Area Start -->
+                                <div class="contact_input_area">
+                                    <div class="row">
+                                        <!-- Single Input Area Start -->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control name" name="name" id="name" placeholder="Nom" required>
+                                            </div>
+                                        </div>
+                                        <!-- Single Input Area Start -->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control name" name="password" id="password" placeholder="Mot de passe" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control name" name="code_postal" id="code_postal" placeholder="Code postal" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control name" name="ville" id="ville" placeholder="Ville" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control datepicker name" name="date_naissance" id="date_naissance" placeholder="Date de naissance" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <p><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;Je suis majeur, j'accepte la <a href="" class="color-theme">Politique de confidentialité</a> et <a href="" class="color-theme">CGV</a>, et de recevoir des emails</p>
+                                        <!-- Single Input Area Start -->
+                                        
+                                        <!-- Single Input Area Start -->
+                                    </div>
+                                </div>
+                                <!-- Message Input Area End -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-secondary btn-round" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn submit-btn">Je m'inscris</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Connexion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <!-- Form Start-->
+                        <div class="contact_from">
+                            <form action="#" method="post">
+                                <div class="contact_input_area">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email_login" id="email_login" placeholder="E-mail" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control name" name="password_login" id="password_login" placeholder="Mot de passe" required autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-secondary btn-round" data-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn submit-btn">Se connecter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -812,6 +858,22 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $('.datepicker').datepicker({
+                inline: true
+            });
+            $(document).on('click', '[id^=login_]', function (e) {
+                e.preventDefault();
+                $("#modalLogin").modal();
+            });
+            $(document).on('click', '[id^=register_]', function (e) {
+                e.preventDefault();
+                $("#modalRegister").modal();
+            });
+        });
+    </script>
 </body>
 
 </html>

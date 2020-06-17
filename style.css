@@ -1333,6 +1333,8 @@ select.form-control:not([size]):not([multiple]) {
     transition-duration: 500ms;
 }
 
+
+
 .social-icon {
     margin-bottom: 30px;
 }

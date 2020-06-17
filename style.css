@@ -401,7 +401,7 @@ p {
 }
 
 a.color-theme {
-    color: #6f42c1 !important;
+    color: #fb397d !important;
     text-decoration: underline;
 }
 
@@ -439,11 +439,11 @@ a.color-theme {
 
 .wellcome_area {
     /* background-image: url(img/bg-img/welcome-bg.png); */
-    background-image: url("img/home-img/home-img.jpg");
+    background-image: url("img/home-img/home.jpg");
     height: 900px;
     position: relative;
     z-index: 1;
-    background-position: bottom center;
+    /* background-position: bottom center; */
     background-size: cover;
 }
 
@@ -473,7 +473,8 @@ a.color-theme {
 }
 
 .wellcome-heading > h2 {
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 80px;
     color: #ffffff;
     font-weight: 700;
     position: relative;
@@ -553,8 +554,68 @@ a.color-theme {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
-.wellcome-heading {
-    margin-bottom: 100px;
+/*.wellcome-heading {
+    margin-top: 100px;
+}*/
+
+.txt-white {
+    color: #fff;
+}
+
+.ft-size-50 {
+    font-size: 40px !important;
+}
+
+.gender-woman {
+    color: #fb397d;
+}
+
+.gender-man {
+    color: #5b32b4;
+}
+
+.col-contact-form-desk {
+    /* background-color: #884bdf; */
+    background-color: #fff;
+    /* opacity: 0.9; */
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+
+/*.txt-indigo {
+    color: #884bdf;
+}*/
+
+.get-start-area-desk {
+    position: absolute;
+    top: -360px;
+    left: -125px;
+}
+
+.bg-gardien {
+    background: linear-gradient(to left, #7873ed, #a865e1);
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+.wellcome_area-mobile {
+    display: none;
+}
+
+.wellcome-heading-desk {
+    position: absolute;
+    left: 380px;
+}
+
+.wd-100 {
+    width: 100%;
 }
 
 /* --------------------------
@@ -1315,6 +1376,7 @@ a.color-theme {
     border-radius: 50%;
     text-align: center;
     color: #6f42c1 !important;
+    background: none !important;
 }
 
 .ui-widget.ui-widget-content {
@@ -1339,4 +1401,9 @@ span.status {
     color: #ffffff;
     font-weight: 500;
     border-radius: 22px 25px 22px 0;
+}
+
+.ui-widget-header {
+    border: none !important;
+    background: none !important;
 }

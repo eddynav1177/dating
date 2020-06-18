@@ -28,6 +28,14 @@
         left: -65px;
     }
 }
+@media (min-width: 1300px) {
+    .wellcome-heading.wellcome-heading-desk {
+        margin-top: -15px;
+    }
+    .get-start-area.get-start-area-desk {
+        margin-top: 15px;
+    }
+}
 @media (min-width: 1300px) and (max-width: 1350px) {
     .get-start-area-desk {
         left: -5px;

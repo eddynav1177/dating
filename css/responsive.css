@@ -39,14 +39,20 @@
         left: 480px;
     }    
 }
-@media (min-width: 1100px) and (max-width: 1250px) {
-    .wellcome-heading-desk {
-        left: 50px;
+/*@media (min-width: 1200px) and (max-width: 1299px) {
+    .get-start-area-desk {
+        left: 15px;
     }
-}
+    .wellcome-heading > h2 {
+        font-size: 60px;
+    }
+    .wellcome-heading-desk {
+        left: 450px;
+    }
+}*/
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu_area .navbar-brand {
-        font-size: 42px;
+        font-size: 75px;
     }
     .menu_area #nav .nav-link {
         padding: 35px 7.5px;
@@ -74,8 +80,8 @@
     }
     .get-start-area-desk {
         position: relative;
-        margin-top: -80px;
-        margin-left: 20px;
+        /*margin-top: -80px;
+        margin-left: 20px;*/
         top: 0;
         left: 0;
     }
@@ -86,29 +92,39 @@
         padding-top: 50px;
     }
     .wellcome-heading-desk {
-        top: 180px;
+        /* top: 180px; */
+        text-align: center;
+    }
+    .max-wd-100 {
+        max-width: 50% !important;
+    }
+    .txt-inscription.ft-size-40.mr-b0 {
+        font-size: 35px !important;
+    }
+    .get-start-area-desk {
+        margin-top: 35px;
     }
 }
 
 @media (max-width: 991px) {
-    .wellcome_area {
+    /*.wellcome_area {
         height: 500px;
-    }
+    }*/
     .disp-none-mobile {
         display: none;
     }
-    .wellcome_area-mobile {
+    /*.wellcome_area-mobile {
         display: block;
-    }
-    .wellcome_area-desk {
+    }*/
+    /*.wellcome_area-desk {
         display: none;
-    }
-    .bg-gardien {
+    }*/
+    /*.bg-gardien {
         background: none;
-    }
-    .section_padding_100_50 {
+    }*/
+    /*.section_padding_100_50 {
         padding-top: 950px;
-    }
+    }*/
     .section-heading {
         margin-bottom: 40px;
     }
@@ -119,11 +135,40 @@
         margin-bottom: 0 !important;
     }
     .fa.fa-bars {
-        color: #7873ed;
+        color: #726a84;
         font-size: 25px;
     }
     .navbar-light .navbar-toggler {
         padding-right: 0;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background: none !important;
+    }
+    .navbar-light .navbar-toggler {
+        color: #726a84;
+        border: none;
+    }
+    .pad-l10-mob {
+        padding-left: 10px;
+    }
+    .pad-r10-mob {
+        padding-right: 10px;
+    }
+    .disp-block-mobile {
+        display: block;
+    }
+    .wellcome_area {
+        height: auto;
+        background-position: 80% 50%;
+    }
+    .wellcome-heading > h2 {
+        color: #d3d5ca;
+    }
+    .txt-inscription, .fa.fa-arrow-down.ft-size-35 {
+        color: #fff;
+    }
+    p.txt-indigo {
+        color: #403ae4;
     }
 }
 
@@ -209,12 +254,25 @@
     }
     .wellcome-heading > h2 {
         font-size: 40px;
+        margin-top: 90px;
     }
     .pad-mobile-0 {
         padding: 0;
     }
-    .section_padding_100_50 {
+    .max-wd-100 {
+        max-width: 100% !important;
+    }
+    .get-start-area.get-start-area-desk {
+        opacity: 0.6;
+    }
+    /*.section_padding_100_50 {
         padding-top: 750px;
+    }*/
+    .fl-wrap {
+        flex-wrap: wrap;
+    }
+    .disp-block-mobile {
+        display: flex;
     }
 }
 
@@ -249,12 +307,25 @@
         font-size: 14px;
     }
     .wellcome-heading > h2 {
-        font-size: 30px;
+        font-size: 38px;
         text-align: center;
+        opacity: 0.7;
+    }
+    .txt-inscription.ft-size-40.mr-b0, .fa.fa-arrow-down.ft-size-35 {
+        font-size: 30px !important;
     }
     .get-start-area .email {
         margin-bottom: 20px;
         max-width: 100%;
+    }
+    .get-start-area.get-start-area-desk {
+        opacity: 0.6;
+    }
+    /*.txt-white.ft-size-23 {
+        color: #292a27bf;
+    }*/
+    .col-contact-form-desk {
+        padding-top: 0;
     }
     .welcome-thumb {
         width: 90%;
@@ -326,15 +397,20 @@
         top: -105px;
         left: -1px;
     }
-    .wellcome-heading,
-    .single-cool-fact {
-        margin-bottom: 50px;
+    .wellcome-heading, .single-cool-fact {
+        margin-bottom: 30px;
+        margin-top: 80px;
     }
     .cool_facts_area .col-12:last-of-type .single-cool-fact {
         margin-bottom: 0;
     }
 }
 
+/*@media (min-width: 321px) and (max-width: 479px) {
+    .wellcome_area {
+        background-position: 100% 50%;    }
+
+}*/
 @media (min-width: 480px) and (max-width: 767px) {
     .wellcome-heading > h3 {
         font-size: 284px;
@@ -358,11 +434,6 @@
     }
 }
 
-@media (max-width: 567px) {
-    .wellcome_area {
-        background-position: bottom center;
-    }
-}
 @media (min-width: 576px) and (max-width: 767px) {
     .wellcome-heading > h3 {
         font-size: 286px;

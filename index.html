@@ -15,12 +15,13 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css?v=1.0" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/responsive.css?v=1.0" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -55,9 +56,9 @@
                                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
                                 </ul>
-                                <div class="sing-up-button d-lg-none">
+                                <!-- <div class="sing-up-button d-lg-none">
                                     <a id="register_mobile">S'inscrire</a>
-                                </div>
+                                </div> -->
                                 <div class="sing-up-button d-lg-none">
                                     <a id="login_mobile">Se connecter</a>
                                 </div>
@@ -67,9 +68,9 @@
                 </div>
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-5">
-                    <div class="sing-up-button disp-none-mobile">
+                    <!-- <div class="sing-up-button disp-none-mobile">
                         <a id="register_desk">S'inscrire</a>
-                    </div>
+                    </div> -->
                     <div class="sing-up-button disp-none-mobile">
                         <a id="login_id">Se connecter</a>
                     </div>
@@ -83,33 +84,49 @@
     <section class="wellcome_area wellcome_area-desk clearfix" id="home">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-12 col-md">
+                <div class="col-12 col-md col-p-first">
+                    <div class="wellcome-heading wellcome-heading-desk">
+                        <h2>Brunet en ligne</h2>
+                        <!-- <div class="line-shape"></div> -->
+                    </div>
                     <div class="get-start-area get-start-area-desk">
                         <!-- Form Start -->
-                        <div class="col-md-4 col-contact-form-desk bg-gardien">
+                        <div class="col-md-4 text-center max-wd-100">
+                            <h3 class="txt-inscription ft-size-40 mr-b0">Inscription gratuite</h3>
+                            <p class="mr-b0"><i class="fa fa-arrow-down ft-size-35 animate__bounce" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="col-md-4 col-contact-form-desk bg-gardien max-wd-100">
                             <!-- Form Start-->
                             <div class="contact_from">
                                 <form action="#" method="post">
                                     <!-- Message Input Area Start -->
                                     <div class="contact_input_area">
                                         <div class="row">
-                                            <div class="col-md-12">
-                                                <input type="radio" id="gender_woman_1" name="gender" value="Femme"> <label for="gender_woman"><p><i class="fa fa-venus ft-size-50 gender-woman" aria-hidden="true" title="Femme"></i></p> </label>
-                                                <input type="radio" id="gender_man_1" name="gender" value="Homme"> <label for="gender_man"><p><i class="fa fa-mars ft-size-50 gender-man" aria-hidden="true" title="Homme"></i></p> </label>
+                                            <div class="col-md-12 disp-flex mr-b-15">
+                                                <div class="col-md-6 pad-0">
+                                                    <p class="txt-white ft-size-23 mr-b0">Je suis : </p>
+                                                    <input type="radio" id="gender_woman_1" name="gender" value="Femme"> <label for="gender_woman_1"><p><i class="fa fa-venus ft-size-50 gender-woman" aria-hidden="true" title="Femme"></i></p> </label>
+                                                    <input type="radio" id="gender_man_1" name="gender" value="Homme"> <label for="gender_man_1"><p><i class="fa fa-mars ft-size-50 gender-man" aria-hidden="true" title="Homme"></i></p> </label>
+                                                </div>
+                                                <div class="col-md-6 pad-0">
+                                                    <p class="txt-white ft-size-23 mr-b0">Int&eacute;ress&eacute; par : </p>
+                                                    <input type="radio" id="gender_woman_2" name="gender_checked" value="Femme"> <label for="gender_woman_2"><p><i class="fa fa-venus ft-size-50 gender-woman" aria-hidden="true" title="Femme"></i></p> </label>
+                                                    <input type="radio" id="gender_man_2" name="gender_checked" value="Homme"> <label for="gender_man_2"><p><i class="fa fa-mars ft-size-50 gender-man" aria-hidden="true" title="Homme"></i></p> </label>
+                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control name" name="email_1" id="email_1" placeholder="E-mail" required autocomplete="off">
+                                                    <input type="text" class="form-control name" name="name_1" id="name_1" placeholder="Mon pr&eacute;nom" required>
                                                 </div>
-                                            </div>                                            
+                                            </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="password" class="form-control name" name="password_1" id="password_1" placeholder="Mot de passe" required autocomplete="off">
+                                                    <input type="password" class="form-control name" name="password_1" id="password_1" placeholder="Choisissez un mot de passe" required autocomplete="off">
                                                 </div>
-                                            </div>                                            
+                                            </div>   
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control name" name="name_1" id="name_1" placeholder="Nom" required>
+                                                    <input type="email" class="form-control name" name="email_1" id="email_1" placeholder="Mon email" required autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -119,7 +136,6 @@
                                                         <option>Belgique</option>
                                                     </select>
                                                 </div>
-                                                
                                             </div>
                                             <div class="col-md-5">
                                                 <div class="form-group">
@@ -131,18 +147,34 @@
                                                     <input type="text" class="form-control name" name="ville_1" id="ville_1" placeholder="Ville" required autocomplete="off">
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control datepicker name" name="date_naissance_1" id="date_naissance_1" placeholder="Date de naissance" required autocomplete="off">
+                                            <div class="col-md-12 disp-flex">
+                                                <div class="col-md-4 pad-l0 pad-r5">
+                                                    <div class="form-group">
+                                                        <select class="form-control name" name="date_naissance_1" id="date_naissance_1" required>
+                                                            <option>01</option>
+                                                            <option>02</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="tel" class="form-control name" name="tel" id="tel" placeholder="T&eacute;l&eacute;phone" required autocomplete="off">
+                                                <div class="col-md-4 pad-l0 pad-r5">
+                                                    <div class="form-group">
+                                                        <select class="form-control name" name="date_naissance_1" id="date_naissance_1" required>
+                                                            <option>01</option>
+                                                            <option>02</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 pad-l0 pad-r0">
+                                                    <div class="form-group">
+                                                        <select class="form-control name" name="date_naissance_1" id="date_naissance_1" required>
+                                                            <option>2002</option>
+                                                            <option>2003</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
-                                                <p class="txt-white"><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;Je suis majeur, j'accepte la <a href="" class="color-theme">Politique de confidentialité</a> et <a href="" class="color-theme">CGV</a>, et de recevoir des emails</p>
+                                                <p class="txt-white txt-indigo"><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;Je suis majeur, j'accepte la <a href="" class="color-theme">Politique de confidentialité</a> et <a href="" class="color-theme">CGV</a>, et de recevoir des emails</p>
                                             </div>
                                             <div class="col-12 text-center">
                                                 <button type="submit" class="btn submit-btn wd-100">Je m'inscris</button>
@@ -157,11 +189,6 @@
                             </div>
                         </div>
                         <!-- Form End -->
-                    </div>
-                    <div class="wellcome-heading wellcome-heading-desk">
-                        <h2>La chasse est ouverte</h2>
-                        <h3>C</h3>
-                        <!-- <p>Everything You Need. To Start Selling Online Beautifully</p> -->
                     </div>
                 </div>
             </div>
@@ -282,7 +309,7 @@
 
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
-        <div class="container">
+        <div class="container pad-0">
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Heading Text  -->
@@ -293,83 +320,331 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="img/team-img/team-pic-8.jpg" alt="">
-                            <span class="status"></span>
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <div class="col-12 col-md-12 col-lg-12 disp-flex pad-0 fl-wrap">
+                    <div class="col-5 col-md-12 col-lg-5 disp-flex flex-wrap pad-0 pad-l10-mob">
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-1.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Jackson Nash</h4>
+                                    <p>Tax Advice</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="member-text">
-                            <h4>Jackson Nash</h4>
-                            <p>Tax Advice</p>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-2.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-3.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Jackson Nash</h4>
+                                    <p>Tax Advice</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-4.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-5.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-6.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-7.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-8.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-9.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-10.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-11.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-12.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-13.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-14.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Alex Manning</h4>
+                                    <p>CEO-Founder</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="img/team-img/team-pic-6.jpg" alt="">
-                            <span class="status"></span>
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <div class="col-2 col-md-12 col-lg-2 disp-flex flex-wrap pad-0"></div>
+                    <div class="col-5 col-md-12 col-lg-5 disp-flex disp-block-mobile flex-wrap pad-0 pad-r10-mob">
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-homme-4.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Jackson Nash</h4>
+                                    <p>Tax Advice</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="member-text">
-                            <h4>Alex Manning</h4>
-                            <p>CEO-Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="img/team-img/team-pic-4.jpg" alt="">
-                            <span class="status"></span>
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="single-team-member">
+                                <div class="member-image">
+                                    <img src="img/team-img/team-flirt-homme-5.jpg" alt="">
+                                    <span class="status"></span>
+                                    <div class="team-hover-effects">
+                                        <div class="team-social-icon">
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-text">
+                                    <h4>Jackson Nash</h4>
+                                    <p>Tax Advice</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="member-text">
-                            <h4>Ollie Schneider</h4>
-                            <p>Business Planner</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="member-image">
-                            <img src="img/team-img/team-pic-5.jpg" alt="">
-                            <span class="status"></span>
-                            <div class="team-hover-effects">
-                                <div class="team-social-icon">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-text">
-                            <h4>Roger West</h4>
-                            <p>Financer</p>
                         </div>
                     </div>
                 </div>
@@ -413,19 +688,18 @@
             <h2>Cougar</h2>
         </div>
         <!-- social icon-->
-        <div class="footer-social-icon">
+        <!-- <div class="footer-social-icon">
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
             <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        </div>
+        </div> -->
         <div class="footer-menu">
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    <li><a href="#">Conditions g&eacute;n&eacute;rales de ventes</a></li>
+                    <li><a href="#">Mention l&eacute;gale</a></li>
                 </ul>
             </nav>
         </div>

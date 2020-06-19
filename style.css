@@ -373,13 +373,15 @@ p {
 .menu_area #nav .nav-link {
     color: #fff;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 30px;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
     padding: 35px 15px;
+    text-decoration: underline;
+    text-decoration-color: #fff;
 }
 
 

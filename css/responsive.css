@@ -442,6 +442,11 @@
     }
 }
 
+@media (min-width: 567px) {
+    .pad-5 {
+        padding: 5px;
+    }
+}
 @media (min-width: 576px) and (max-width: 767px) {
     .wellcome-heading > h3 {
         font-size: 286px;

@@ -15,10 +15,10 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link href="style.css?v=1.2" rel="stylesheet">
+    <link href="style.css?v=1.3" rel="stylesheet">
 
     <!-- Responsive CSS -->
-    <link href="css/responsive.css?v=1.2" rel="stylesheet">
+    <link href="css/responsive.css?v=1.3" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet"/> -->
@@ -84,7 +84,7 @@
     <section class="wellcome_area wellcome_area-desk clearfix" id="home">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-12 col-md col-p-first">
+                <div class="col-12 col-md col-p-first" id="blk_inscription">
                     <div class="wellcome-heading wellcome-heading-desk">
                         <h2>Brunet en ligne</h2>
                         <!-- <div class="line-shape"></div> -->
@@ -97,12 +97,12 @@
                         </div>
                         <div class="col-md-4 col-contact-form-desk bg-gardien max-wd-100">
                             <!-- Form Start-->
-                            <div class="contact_from">
+                            <div class="contact_from" id="inscription">
                                 <form action="#" method="post">
                                     <!-- Message Input Area Start -->
                                     <div class="contact_input_area">
                                         <div class="row">
-                                            <div class="col-md-12 disp-flex mr-b-15">
+                                            <div class="col-md-12 d-flex mr-b-15">
                                                 <div class="col-md-6 pad-0">
                                                     <p class="txt-white ft-size-23 mr-b0">Je suis : </p>
                                                     <input type="radio" id="gender_woman_1" name="gender" value="Femme"> <label for="gender_woman_1"><p><i class="fa fa-venus ft-size-50 gender-woman" aria-hidden="true" title="Femme"></i></p> </label>
@@ -147,10 +147,10 @@
                                                     <input type="text" class="form-control name" name="ville_1" id="ville_1" placeholder="Ville" required autocomplete="off">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 disp-flex">
+                                            <div class="col-md-12 d-flex">
                                                 <div class="col-md-4 pad-l0 pad-r5">
                                                     <div class="form-group">
-                                                        <select class="form-control name" name="date_naissance_1" id="date_naissance_1" required>
+                                                        <select class="form-control name" name="jour_naissance" id="jour_naissance" required>
                                                             <option>01</option>
                                                             <option>02</option>
                                                         </select>
@@ -158,7 +158,7 @@
                                                 </div>
                                                 <div class="col-md-4 pad-l0 pad-r5">
                                                     <div class="form-group">
-                                                        <select class="form-control name" name="date_naissance_1" id="date_naissance_1" required>
+                                                        <select class="form-control name" name="mois_naissance" id="mois_naissance" required>
                                                             <option>01</option>
                                                             <option>02</option>
                                                         </select>
@@ -166,7 +166,7 @@
                                                 </div>
                                                 <div class="col-md-4 pad-l0 pad-r0">
                                                     <div class="form-group">
-                                                        <select class="form-control name" name="date_naissance_1" id="date_naissance_1" required>
+                                                        <select class="form-control name" name="annee_naissance" id="annee_naissance" required>
                                                             <option>2002</option>
                                                             <option>2003</option>
                                                         </select>
@@ -199,43 +199,48 @@
         </div>
     </section>
     <div class="col-12 col-md-12 col-lg-12 pad-0 text-center z-index-max p-t20 p-b20 bg-gris ttl-avantage m-b2">
-        <h1 class="txt-upper txt-white">Nos avantages</h1>
+        <h1 class="txt-white">Nos avantages</h1>
     </div>
     <section class="cool_facts_area clearfix">
         <div class="row">
             <!-- Single Cool Fact-->
-            <div class="col-12 col-md-4 col-lg-4 bg-gris-fonce p-b150 p-t110">
-                <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="counter-area">
-                        <h3><span class="counter">120</span></h3>
-                    </div>
-                    <div class="cool-facts-content">
-                        <i class="ion-happy-outline"></i>
-                        <p>Happy <br> Clients</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Cool Fact-->
-            <div class="col-12 col-md-4 col-lg-4 bg-gris p-b150 p-t110">
-                <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="counter-area">
-                        <h3><span class="counter">40</span></h3>
-                    </div>
-                    <div class="cool-facts-content">
+            <div class="col-12 col-md-4 col-lg-4 bg-gris-fonce p-b150 p-t110 p-dir20">
+                <!-- <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s"> -->
+                <div class="single-cool-fact justify-content-center wow fadeInUp text-center" data-wow-delay="0.1s">
+                    
+                    <div class="cool-facts-content disp-block">
                         <i class="ion-person"></i>
-                        <p>ACTIVE <br>ACCOUNTS</p>
+                        <p class="ft-size-36">Plus de <span class="counter">1000</span>Membres</p>
+                        <p>Rejoignez l'une des plus importantes communautés de femmes, d'hommes mais aussi de couples en quête de rencontres intenses, originales et pimentées</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn submit-btn txt-white" id="inscription_avantage_1">S'inscrire</button>
                     </div>
                 </div>
             </div>
             <!-- Single Cool Fact-->
-            <div class="col-12 col-md-4 col-lg-4 bg-gris-fonce p-b150 p-t110">
-                <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="counter-area">
-                        <h3><span class="counter">10</span></h3>
+            <div class="col-12 col-md-4 col-lg-4 bg-gris p-b150 p-t110 p-dir20">
+                <div class="single-cool-fact justify-content-center wow fadeInUp text-center" data-wow-delay="0.6s">
+                    <div class="cool-facts-content disp-block">
+                        <i class="fa fa-map-marker"></i>
+                        <p class="ft-size-36">Localisation des membres</p>
+                        <p>Identifiez rapidement les membres qui se trouvent près de votre position à chaque instant, même lorsque vous êtes en voyage pour vos loisirs ou pour le travail !</p>
                     </div>
-                    <div class="cool-facts-content">
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn submit-btn txt-white" id="inscription_avantage_2">S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Cool Fact-->
+            <div class="col-12 col-md-4 col-lg-4 bg-gris-fonce p-b150 p-t110 p-dir20">
+                <div class="single-cool-fact justify-content-center wow fadeInUp text-center" data-wow-delay="0.8s">
+                    <div class="cool-facts-content disp-block">
                         <i class="ion-ios-star-outline"></i>
-                        <p>TOTAL <br>APP RATES</p>
+                        <p class="ft-size-36">Facile et rapide</p>
+                        <p>Notre service a été pensé pour être aussi simple d'utilisation que possible, en se limitant aux fonctions vraiment utiles pour faire des rencontres réelles et excitantes.</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn submit-btn txt-white" id="inscription_avantage_3">S'inscrire</button>
                     </div>
                 </div>
             </div>
@@ -245,7 +250,7 @@
 
     <!-- ***** Our Team Area Start ***** -->
     <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
-        <div class="container pad-0">
+        <div class="container pad-0 pad-5">
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Heading Text  -->
@@ -256,331 +261,309 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 disp-flex pad-0 fl-wrap">
-                    <div class="col-5 col-md-12 col-lg-5 disp-flex flex-wrap pad-0 pad-l10-mob">
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-1.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Jackson Nash</h4>
-                                    <p>Tax Advice</p>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-3.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-2.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-3.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Jackson Nash</h4>
-                                    <p>Tax Advice</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-4.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-5.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-6.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-7.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-8.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-9.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-10.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-11.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-12.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-13.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-14.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Alex Manning</h4>
-                                    <p>CEO-Founder</p>
-                                </div>
-                            </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
                         </div>
                     </div>
-                    <div class="col-2 col-md-12 col-lg-2 disp-flex flex-wrap pad-0"></div>
-                    <div class="col-5 col-md-12 col-lg-5 disp-flex disp-block-mobile flex-wrap pad-0 pad-r10-mob">
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-homme-4.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Jackson Nash</h4>
-                                    <p>Tax Advice</p>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-4.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="single-team-member">
-                                <div class="member-image">
-                                    <img src="img/team-img/team-flirt-homme-5.jpg" alt="">
-                                    <span class="status"></span>
-                                    <div class="team-hover-effects">
-                                        <div class="team-social-icon">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-text">
-                                    <h4>Jackson Nash</h4>
-                                    <p>Tax Advice</p>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-6.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-homme-4.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-12.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-14.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-15.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-9.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-2.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-homme-5.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-21.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-22.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-23.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-11.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-5.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-13.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-10.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-lg-2">
+                    <div class="single-team-member">
+                        <div class="member-image" id="member_image_1">
+                            <img src="img/team-img/team-flirt-7.jpg" alt="">
+                            <span class="status"></span>
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    <a id="member_envelope_1"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <strong class="member-text-name"><span>Alex</span></strong> 
+                            de <strong class="member-text-country"><i>Paris</i></strong>
                         </div>
                     </div>
                 </div>
@@ -588,34 +571,6 @@
         </div>
     </section>
     <!-- ***** Our Team Area End ***** -->
-
-    <!-- ***** Contact Us Area Start ***** -->
-    <!-- <section class="footer-contact-area section_padding_100 clearfix" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-heading">
-                        <h2>Get in touch with us!</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                    <div class="footer-text">
-                        <p>We'll send you epic weekly blogs, whitepapers and things to make your app startup thrive, all FREE!</p>
-                    </div>
-                    <div class="address-text">
-                        <p><span>Address:</span> 40 Baria Sreet 133/2 NewYork City, US</p>
-                    </div>
-                    <div class="phone-text">
-                        <p><span>Phone:</span> +11-225-888-888-66</p>
-                    </div>
-                    <div class="email-text">
-                        <p><span>Email:</span> info.deercreative@gmail.com</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section> -->
-    <!-- ***** Contact Us Area End ***** -->
 
     <!-- ***** Footer Area Start ***** -->
     <footer class="footer-social-icon text-center section_padding_70 clearfix">
@@ -644,76 +599,6 @@
             <p>Copyright ©2020 Cougar. Designed by <a href="" target="_blank">Cougar</a></p>
         </div>
     </footer>
-    <!-- ***** Footer Area Start ***** -->
-    <!-- <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Inscription</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="col-md-12">
-                        <div class="contact_from">
-                            <form action="#" method="post">
-                                <div class="contact_input_area">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-check form-check-inline">
-                                                <input type="radio" id="gender_woman" name="gender" value="Femme"> <label for="gender_woman"><p>Femme</p> </label>
-                                                <input type="radio" id="gender_man" name="gender" value="Homme"> <label for="gender_man"><p>Homme</p> </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control name" name="name" id="name" placeholder="Nom" required>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control name" name="email" id="email" placeholder="E-mail" required autocomplete="off">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="password" class="form-control name" name="password" id="password" placeholder="Mot de passe" required autocomplete="off">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control name" name="code_postal" id="code_postal" placeholder="Code postal" required autocomplete="off">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control name" name="ville" id="ville" placeholder="Ville" required autocomplete="off">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control datepicker name" name="date_naissance" id="date_naissance" placeholder="Date de naissance" required autocomplete="off">
-                                            </div>
-                                        </div>
-                                        <p><input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;Je suis majeur, j'accepte la <a href="" class="color-theme">Politique de confidentialité</a> et <a href="" class="color-theme">CGV</a>, et de recevoir des emails</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="col-12 text-center">
-                        <button type="button" class="btn btn-secondary btn-round" data-dismiss="modal">Annuler</button>
-                        <button type="submit" class="btn submit-btn">Je m'inscris</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -772,21 +657,7 @@
     <!-- Active JS -->
     <script src="js/active.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $(document).on('ready', function () {
-            $('.datepicker').datepicker({
-                inline: true
-            });
-            $(document).on('click', '[id^=login_]', function (e) {
-                e.preventDefault();
-                $("#modalLogin").modal();
-            });
-            $(document).on('click', '[id^=register_]', function (e) {
-                e.preventDefault();
-                $("#modalRegister").modal();
-            });
-        });
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

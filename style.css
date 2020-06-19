@@ -1276,7 +1276,7 @@ select.form-control:not([size]):not([multiple]) {
 -------------------------- */
 
 .member-image {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 30px 30px 30px 0;
     position: relative;
     z-index: 1;
@@ -1302,8 +1302,8 @@ select.form-control:not([size]):not([multiple]) {
 .team-social-icon {
     position: absolute;
     z-index: 5;
-    top: -10px;
-    right: 10px;
+    top: 0;
+    right: 5px;
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -1322,15 +1322,17 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 14px;
     color: #fff !important;
     background: #736f7c;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
     text-align: center;
-    /* border-radius: 10px 10px 10px 0; */
+    border-radius: 10px 10px 10px 0;
     border-radius: 50%;
     display: block;
     margin: 2.5px;
     cursor: pointer;
+    opacity: 0.8;
+    left: 5px;
 }
 
 .member-image:hover {
@@ -1545,8 +1547,8 @@ span.status {
     height: 10px;
     border-radius: 50%;
     display: inline-block;
-    right: 12px;
-    top: 5px;
+    right: 7px;
+    top: 8px;
     position: absolute;
     z-index: 2;
 }

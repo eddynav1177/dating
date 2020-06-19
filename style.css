@@ -916,10 +916,10 @@ select.form-control:not([size]):not([multiple]) {
     background: #ebede296;
 }
 .p-b150 {
-    padding-bottom: 130px;
+    padding-bottom: 60px;
 }
 .p-t110 {
-    padding-top: 90px;
+    padding-top: 40px;
 }
 .member-text {
     font-size: 16px;
@@ -929,6 +929,9 @@ select.form-control:not([size]):not([multiple]) {
 }
 .member-text-country {
     color: #007bff;
+}
+.footer-menu ul li a, .copyright-text > p {
+    font-size: 14px;
 }
 /* --------------------------
 :: 7.0 Cool Facts Area CSS

@@ -27,6 +27,24 @@
     .get-start-area-desk {
         left: -65px;
     }
+    .sing-up-button > a {
+        min-width: 130px;
+    }
+    .wellcome-heading.wellcome-heading-desk {
+        margin-top: -35px;
+    }
+    .txt-white.ft-size-23.mr-b0 {
+        font-size: 20px;
+    }
+    .fa.gender-woman, .fa.gender-man {
+        font-size: 30px !important;
+    }
+    .wellcome-heading.wellcome-heading-desk {
+        margin-top: -80px !important;
+    }
+    .txt-white.txt-indigo {
+        font-size: 15px;
+    }
 }
 @media (min-width: 1300px) {
     .wellcome-heading.wellcome-heading-desk {
@@ -36,28 +54,101 @@
         margin-top: 15px;
     }
 }
-@media (min-width: 1300px) and (max-width: 1350px) {
+@media (min-width: 1300px) and (max-width: 1399px) {
     .get-start-area-desk {
         left: -5px;
     }
     .wellcome-heading > h2 {
-        font-size: 50px;
+        font-size: 42px;
+        margin-top: -160px;
     }
     .wellcome-heading-desk {
         left: 480px;
-    }    
-}
-/*@media (min-width: 1200px) and (max-width: 1299px) {
-    .get-start-area-desk {
-        left: 15px;
     }
-    .wellcome-heading > h2 {
+    .name {
+        font-size: 13px;
+    }
+    .menu_area .navbar-brand {
         font-size: 60px;
     }
-    .wellcome-heading-desk {
-        left: 450px;
+    .get-start-area-desk {
+        left: -65px;
     }
-}*/
+    .txt-inscription.ft-size-40.mr-b0, p.mr-b0 {
+        font-size: 28px !important;
+    }
+    .txt-white.ft-size-23.mr-b0 {
+        font-size: 16px !important;
+    }
+    .gender-woman, .gender-man {
+        font-size: 23px !important;
+    }
+    .txt-white.txt-indigo {
+        font-size: 13px;
+    }
+    .sing-up-button > a {
+        height: 40px;
+        min-width: 120px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .pad-r0 {
+        padding-right: 0;
+    }
+    .header_area {
+        padding-right: 10px;
+    }
+}
+@media (min-width: 1099px) and (max-width: 1250px) {
+    .wellcome-heading > h2 {
+        font-size: 40px;
+    }
+    .menu_area .navbar-brand {
+        font-size: 60px;
+    }
+    .wellcome-heading.wellcome-heading-desk {
+        margin-top: -220px;
+    }
+    .header_area {
+        padding-left: 0;
+    }
+    .txt-inscription.ft-size-40.mr-b0, .get-start-area.get-start-area-desk>p.mr-b0 {
+        font-size: 26px !important;
+    }
+    .txt-white.ft-size-23.mr-b0 {
+        font-size: 14px !important;
+    }
+    .gender-woman, .gender-man {
+        font-size: 23px !important;
+    }
+    .name {
+        font-size: 12px;
+    }
+    .txt-white.txt-indigo {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+    }
+    .btn.submit-btn {
+        height: 40px;
+    }
+    p.mr-b0 {
+        font-size: 26px !important;
+    }
+    .form-group {
+        margin-bottom: 0.5rem !important;
+    }
+    .wellcome_area {
+        background-position: bottom center;
+    }
+    .header_area {
+        padding-right: 5px;
+    }
+    .sing-up-button > a {
+        height: 40px;
+        min-width: 130px;
+        line-height: 34px;
+    }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu_area .navbar-brand {
         font-size: 75px;
@@ -167,7 +258,10 @@
         padding-top: 0;
     }
     .p-b150 {
-        padding-bottom: 50px;
+        padding-bottom: 40px;
+    }
+    p.ft-size-36 {
+        font-size: 33px !important;
     }
 }
 
@@ -398,7 +492,7 @@
     }
     .wellcome-heading, .single-cool-fact {
         margin-bottom: 30px;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .cool_facts_area .col-12:last-of-type .single-cool-fact {
         margin-bottom: 0;

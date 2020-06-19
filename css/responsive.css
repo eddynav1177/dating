@@ -115,24 +115,9 @@
 }
 
 @media (max-width: 991px) {
-    /*.wellcome_area {
-        height: 500px;
-    }*/
     .disp-none-mobile {
         display: none;
     }
-    /*.wellcome_area-mobile {
-        display: block;
-    }*/
-    /*.wellcome_area-desk {
-        display: none;
-    }*/
-    /*.bg-gardien {
-        background: none;
-    }*/
-    /*.section_padding_100_50 {
-        padding-top: 950px;
-    }*/
     .section-heading {
         margin-bottom: 40px;
     }
@@ -177,6 +162,12 @@
     }
     p.txt-indigo {
         color: #403ae4;
+    }
+    .p-t110 {
+        padding-top: 0;
+    }
+    .p-b150 {
+        padding-bottom: 50px;
     }
 }
 

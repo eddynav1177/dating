@@ -13,8 +13,16 @@ $(document).on('ready', function () {
                 start = '0'+start;
             }
             $('#'+el).append("<option value="+start+">"+start+"</option>");
-            if ($('#'+el).val() == start) {
-                
+            switch (start) {
+                case lastDay:
+                    $("#"+el+" option[value="+lastDay+"]").prop('selected', true);
+                break;
+                case currentMonth:
+                    $("#"+el+" option[value="+currentMonth+"]").prop('selected', true);
+                break;
+                case year_required:
+                    $("#"+el+" option[value="+year_required+"]").prop('selected', true);
+                break;
             }
             start++;
         }
@@ -25,11 +33,7 @@ $(document).on('ready', function () {
     loop_date('mois_naissance', 1, 12);
     // Boucle annee
     loop_date('annee_naissance', 1940, year_required);
-    // $('#jour_naissance').val()
-    if ($('#jour_naissance').val() == lastDay) {
-        $('#jour_naissance').val(lastDay).prop('selected', true);
-    }
-    console.log($('#jour_naissance').val());
+    
     $(document).on('click', '[id^=login_]', function (e) {
         e.preventDefault();
         $("#modalLogin").modal();

@@ -398,6 +398,10 @@ p {
     float: right;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 .sing-up-button > a {
     color: #fff !important;
     font-weight: 500;

@@ -77,8 +77,8 @@
     .txt-inscription.ft-size-40.mr-b0, p.mr-b0 {
         font-size: 28px !important;
     }
-    .txt-white.ft-size-23.mr-b0 {
-        font-size: 16px !important;
+    .txt-white.ft-size-23.mr-b0, label.txt-white {
+        font-size: 15px !important;
     }
     .gender-woman, .gender-man {
         font-size: 23px !important;
@@ -262,6 +262,9 @@
     }
     p.ft-size-36 {
         font-size: 33px !important;
+    }
+    .pad-r0-mob {
+        padding-right: 0 !important;
     }
 }
 

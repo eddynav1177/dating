@@ -34,6 +34,9 @@ $(document).on('ready', function () {
     // Boucle annee
     select_loop_date('annee_naissance', 1940, year_required);
 
+    $(document).on('click', '#p_check_cgv', function (e) {
+        $('#check_cgv').trigger('click');
+    });
     $(document).on('click', '[id^=login_]', function (e) {
         e.preventDefault();
         $("#modalLogin").modal();

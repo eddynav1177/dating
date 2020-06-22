@@ -1,24 +1,24 @@
 $(document).on('ready', function () {
     var date = new Date(),
-        lastDay = date.getDate(),
-        currentMonth = date.getMonth() + 1,
-        currentMonth = (currentMonth < 10) ? '0'+currentMonth : currentMonth,
-        currentYear = date.getFullYear(),
-        year_required = currentYear - 18,    
-        lastday_in_month = new Date(currentYear, currentMonth, 0).getDate();
+        last_day = date.getDate(),
+        current_month = date.getMonth() + 1,
+        current_month = (current_month < 10) ? '0'+current_month : current_month,
+        current_year = date.getFullYear(),
+        year_required = current_year - 18,    
+        last_day_in_month = new Date(current_year, current_month, 0).getDate();
 
-    function loop_date(el,start, end) {
+    function select_loop_date(el,start, end) {
         while (start <= end) {
             if (start < 10) {
                 start = '0'+start;
             }
             $('#'+el).append("<option value="+start+">"+start+"</option>");
             switch (start) {
-                case lastDay:
-                    $("#"+el+" option[value="+lastDay+"]").prop('selected', true);
+                case last_day:
+                    $("#"+el+" option[value="+last_day+"]").prop('selected', true);
                 break;
-                case currentMonth:
-                    $("#"+el+" option[value="+currentMonth+"]").prop('selected', true);
+                case current_month:
+                    $("#"+el+" option[value="+current_month+"]").prop('selected', true);
                 break;
                 case year_required:
                     $("#"+el+" option[value="+year_required+"]").prop('selected', true);
@@ -28,12 +28,12 @@ $(document).on('ready', function () {
         }
     }
     // Boucle date
-    loop_date('jour_naissance', 1, lastday_in_month);
+    select_loop_date('jour_naissance', 1, last_day_in_month);
     // Boucle mois
-    loop_date('mois_naissance', 1, 12);
+    select_loop_date('mois_naissance', 1, 12);
     // Boucle annee
-    loop_date('annee_naissance', 1940, year_required);
-    
+    select_loop_date('annee_naissance', 1940, year_required);
+
     $(document).on('click', '[id^=login_]', function (e) {
         e.preventDefault();
         $("#modalLogin").modal();

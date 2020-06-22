@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    sessionStorage.clear();
     //For Card Number formatted input
     var cardNum = document.getElementById('cr_no');
     cardNum.onkeyup = function (e) {

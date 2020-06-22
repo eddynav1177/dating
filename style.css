@@ -416,6 +416,10 @@ p {
     cursor: pointer;
 }
 
+.ft-size-12 {
+    font-size: 12px;
+}
+
 .sing-up-button > a:hover {
     /* background: #fb397d; */
     background: #6c6473;

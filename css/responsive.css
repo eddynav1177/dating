@@ -212,8 +212,6 @@
     }
     .get-start-area-desk {
         position: relative;
-        /*margin-top: -80px;
-        margin-left: 20px;*/
         top: 0;
         left: 0;
     }
@@ -224,7 +222,6 @@
         padding-top: 50px;
     }
     .wellcome-heading-desk {
-        /* top: 180px; */
         text-align: center;
     }
     .max-wd-100 {
@@ -409,9 +406,6 @@
     .get-start-area.get-start-area-desk {
         opacity: 0.6;
     }
-    /*.section_padding_100_50 {
-        padding-top: 750px;
-    }*/
     .fl-wrap {
         flex-wrap: wrap;
     }
@@ -468,9 +462,6 @@
     .get-start-area.get-start-area-desk {
         opacity: 0.6;
     }
-    /*.txt-white.ft-size-23 {
-        color: #292a27bf;
-    }*/
     .col-contact-form-desk {
         padding-top: 0;
     }
@@ -553,11 +544,6 @@
     }
 }
 
-/*@media (min-width: 321px) and (max-width: 479px) {
-    .wellcome_area {
-        background-position: 100% 50%;    }
-
-}*/
 @media (min-width: 480px) and (max-width: 767px) {
     .wellcome-heading > h3 {
         font-size: 284px;

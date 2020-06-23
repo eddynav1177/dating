@@ -1,28 +1,6 @@
 /* --------------------------
-:: Template Name: Colorlib App - App Landing Page 
-:: Template Author: Colorlib
-:: Template Author URI: https://colorlib.com/
-:: Description: Colorlib is a One Page based App Landing Template. It's very clean, creative & beautiful. It's super     responsive & ultra light.
-:: Tags: Colorlib, App Landing, Apps, Responsive App Landing, Bootstrap 4, Free Theme, Free HTML Template, HTML5 Template etc.
-:: Version: v1.0
-:: Created: 11/03/2017
--------------------------- */
-
-/* --- [Master Stylesheet] ----
-:: 1.0 Base CSS Start
-:: 2.0 Header Area CSS
-:: 3.0 Wellcome Area CSS
-:: 4.0 Special Area CSS
-:: 5.0 Features Area CSS
-:: 6.0 Video Area CSS
-:: 7.0 Cool Facts Area CSS
-:: 8.0 Screenshots Area CSS
-:: 9.0 Pricing Plan Area CSS
-:: 10.0 Testimonials Area CSS
-:: 11.0 CTA Area CSS Start
-:: 12.0 Team Area CSS Start
-:: 13.0 Contact Area CSS Start
-:: 14.0 Footer Area CSS Start
+:: Template Name: Dating App - App Landing Page 
+:: Template Author: Eddy
 -------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
@@ -203,7 +181,6 @@ ol {
     font-size: 24px;
     right: 30px;
     width: 50px;
-    /* background-color: #fb397d; */
     background-color: #d3d5ca;
     color: #fff;
     text-align: center;
@@ -238,7 +215,6 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    /* color: #5b32b4; */
     color: #6c6473;
     font-size: 48px;
     margin: 0;
@@ -384,7 +360,6 @@ p {
     text-decoration-color: #fff;
 }
 
-
 .menu_area nav ul li > a:hover {
     color: #fb397d;
 }
@@ -412,7 +387,6 @@ p {
     display: inline-block;
     border: 2px solid #726a84;
     height: 50px;
-    /* min-width: 178px; */
     min-width: 140px;
     line-height: 46px;
     text-align: center;
@@ -425,7 +399,6 @@ p {
 }
 
 .sing-up-button > a:hover {
-    /* background: #fb397d; */
     background: #6c6473;
     color: #fff;
     border-color: transparent;
@@ -446,7 +419,6 @@ a.color-theme {
 /* stcicky css */
 
 .header_area.sticky {
-    /* background-color: #884bdf; */
     background-color: #6c6473;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -473,13 +445,10 @@ a.color-theme {
 -------------------------- */
 
 .wellcome_area {
-    /* background-image: url(img/bg-img/welcome-bg.png); */
-    /* background-image: url("img/home-img/home.jpg"); */
     background-image: url("img/home-img/bg.jpg");
     height: 900px;
     position: relative;
     z-index: 1;
-    /* background-position: bottom center; */
     background-size: cover;
 }
 
@@ -524,12 +493,7 @@ a.color-theme {
     padding-right: 0;
 }
 
-/*.col-p-first {
-    margin-top: -50px;
-}*/
-
 .wellcome-heading > h2 {
-    /* font-size: 100px; */
     font-size: 60px;
     color: #ffffff;
     font-weight: 700;
@@ -613,10 +577,6 @@ a.color-theme {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
-/*.wellcome-heading {
-    margin-top: 100px;
-}*/
-
 .txt-white {
     color: #fff !important;
 }
@@ -650,9 +610,7 @@ a.color-theme {
 }
 
 .col-contact-form-desk {
-    /* background-color: #884bdf; */
     background-color: #fff;
-    /* opacity: 0.9; */
     border-radius: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -661,16 +619,6 @@ a.color-theme {
 select.form-control:not([size]):not([multiple]) {
     height: auto;
 }
-
-/*.txt-indigo {
-    color: #884bdf;
-}*/
-
-/*.get-start-area-desk {
-    position: absolute;
-    top: -360px;
-    left: -125px;
-}*/
 
 .bg-gardien {
     background: linear-gradient(to left, #ebede2, #6c6473);
@@ -683,11 +631,6 @@ select.form-control:not([size]):not([multiple]) {
 .wellcome_area-mobile {
     display: none;
 }
-
-/*.wellcome-heading-desk {
-    position: absolute;
-    left: 380px;
-}*/
 
 .wd-100 {
     width: 100%;
@@ -930,7 +873,6 @@ select.form-control:not([size]):not([multiple]) {
     width: 5rem;
     border-top-width: 1px;
     border-top-style: solid;
-    /* border-color: #6c6473; */
     border-color: #fff;
     right: 35%;
 }
@@ -972,8 +914,6 @@ select.form-control:not([size]):not([multiple]) {
     background: -webkit-gradient(linear, right top, left top, from(#6c6473), to(#ebede2));
     background: -o-linear-gradient(right, #6c6473, #ebede2);
     background: linear-gradient(to left, #6c6473, #ebede2);
-    /*padding: 150px 0;
-    top: -100px;*/
 }
 .txt-upper {
     text-transform: uppercase;
@@ -1319,8 +1259,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .member-text > h4 {
-    /* font-size: 22px;
-    color: #5b32b4; */
     font-size: 20px;
     color: #6c6473;
 }
@@ -1346,7 +1284,6 @@ select.form-control:not([size]):not([multiple]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: end;
-    /* opacity: 0.9; */
 }
 
 .team-social-icon > a {
@@ -1367,7 +1304,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .member-image:hover {
-    /* opacity: 0.8; */
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -1415,7 +1351,6 @@ select.form-control:not([size]):not([multiple]) {
 
 .name {
     font-size: 16px;
-    /* padding: 15px 15px; */
     padding: 5px;
     border-radius: 25px 25px 25px 0;
 }
@@ -1459,7 +1394,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn.submit-btn {
-    /* background: #fb397d; */
     background: #d3d5ca;
     height: 48px;
     min-width: 185px;
@@ -1469,7 +1403,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn.submit-btn:hover {
-    /* background: #5b32b4; */
     background: #6c6473;
     color: #fff;
     -webkit-transition-duration: 500ms;
@@ -1494,7 +1427,6 @@ select.form-control:not([size]):not([multiple]) {
 -------------------------- */
 
 .footer-text > h2 {
-    /* color: #5b32b4; */
     color: #6c6473;
     font-size: 72px;
     font-weight: 700;
@@ -1519,8 +1451,6 @@ select.form-control:not([size]):not([multiple]) {
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
 }
-
-
 
 .social-icon {
     margin-bottom: 30px;

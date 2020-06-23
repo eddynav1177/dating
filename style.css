@@ -398,6 +398,10 @@ p {
     float: right;
 }
 
+.disp-none {
+    display: none;
+}
+
 .btn {
     cursor: pointer;
 }
@@ -479,6 +483,10 @@ a.color-theme {
     background-size: cover;
 }
 
+.wellcome_area_payment {
+    background-image: url("img/bg-img/bg-payment4.jpg") !important;
+}
+
 .wellcome_area:after {
     position: absolute;
     width: 100%;
@@ -504,8 +512,16 @@ a.color-theme {
     display: none;
 }
 
+.brd-rad-20 {
+    border-radius: 20px;
+}
+
 .disp-flex {
     display: flex;
+}
+
+.par-r0 {
+    padding-right: 0;
 }
 
 /*.col-p-first {

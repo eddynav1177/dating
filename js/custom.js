@@ -44,4 +44,11 @@ $(document).ready(function() {
     }).blur(function(){
         $(this).attr('placeholder', $(this).data('placeholder'));
     });
+
+    $(document).on('click', '[id^=single_team_]', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#blk_inscription").offset().top
+        }, 1000);
+    });
 });

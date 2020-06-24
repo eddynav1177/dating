@@ -1,3 +1,9 @@
 .wellcome_area {
     background-size: cover;
 }
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .wellcome_area {
+        background-position: bottom;
+    }
+}

@@ -41,7 +41,7 @@
 }
 
 .single-team-member {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 input {
@@ -66,6 +66,10 @@ input {
     background-size: inherit;
 }
 
+.member-image img {
+    border-radius: 0;
+}
+
 .m-t60 {
     margin-top: 60px;
 }
@@ -76,6 +80,7 @@ input {
 
 .detail {
     text-align: justify;
+    font-size: 13px;
 }
 
 input:focus {
@@ -126,6 +131,19 @@ body {
 .btn.submit-btn {
     min-width: 140px;
 }
+
+/*.text-marketing {
+    animation: pulse 3s infinite;
+}
+  
+@keyframes pulse {
+    0% {
+        display: none;
+    }
+    100% {
+        display: block;
+    }
+}*/
 
 @media screen and (max-width: 575px) {
     .border-line {

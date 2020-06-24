@@ -80,7 +80,7 @@
         margin-top: 15px;
     }
     .m-t-150 {
-        margin-top: -100px;
+        margin-top: -50px;
     }
     .bg-gardien-desk {
         background: linear-gradient(to left, #ebede2, #6c6473);
@@ -343,6 +343,9 @@
     }
     .pad-l15-mobile {
         padding-left: 15px;
+    }
+    .txt-accroche {
+        color: #141313 !important;
     }
 }
 

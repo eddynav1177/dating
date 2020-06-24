@@ -439,6 +439,9 @@ a.color-theme {
     padding: 0;
 }
 
+.col-blue {
+    color: #007bff;
+}
 
 /* --------------------------
 :: 3.0 Wellcome Area CSS
@@ -449,6 +452,14 @@ a.color-theme {
     height: 900px;
     position: relative;
     z-index: 1;
+}
+
+.disp-block {
+    display: block;
+}
+
+.text-decoration {
+    text-decoration: underline;
 }
 
 .wellcome_area_payment {
@@ -579,6 +590,10 @@ a.color-theme {
     color: #fff;
     opacity: .1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .txt-white {

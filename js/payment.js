@@ -45,10 +45,7 @@ $(document).ready(function() {
         this.value = this.lastValue = parts.join('/');
         this.selectionStart = this.selectionEnd = caretPosition;
     }
-
-    // var myFullpage = new fullpage('#fullpage', {
-    //     verticalCentered: false
-    // });
+    
     $(window).on('scroll', function(e) {
         var scroll_top = $(this).scrollTop();
         if (scroll_top >= 0 && scroll_top <= 90) {
@@ -56,5 +53,12 @@ $(document).ready(function() {
         } else {
             $("#section_cgv").removeClass('hide');
         }
+    });
+
+    $(document).on('click', '#suite_cgv', function () {
+        /*if ($('#plus_cgv').hasClass('hide')) {
+
+        }*/
+        $('#plus_cgv').slideToggle('hide');
     });
 });

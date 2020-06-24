@@ -449,7 +449,6 @@ a.color-theme {
     height: 900px;
     position: relative;
     z-index: 1;
-    background-size: cover;
 }
 
 .wellcome_area_payment {
@@ -502,6 +501,11 @@ a.color-theme {
     text-decoration: underline;
     text-decoration-color: #fff;
     text-decoration-style: wavy;
+}
+
+.m-tb20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .get-start-area .email {

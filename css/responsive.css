@@ -7,20 +7,35 @@
     .get-start-area-desk {
         left: -850px;
     }
+    .wellcome_area_payment {
+        background-position: 300px 0;
+        background-size: cover;
+    }
 }
 @media (min-width: 2201px) and (max-width: 2400px) {
     .get-start-area-desk {
         left: -490px;
+    }
+    .wellcome_area_payment {
+        background-position: 300px 0;
+        background-size: cover;
     }
 }
 @media (min-width: 1801px) and (max-width: 2000px) {
     .get-start-area-desk {
         left: -310px;
     }
+    .wellcome_area_payment {
+        background-position: 300px 0;
+        background-size: cover;
+    }
 }
 @media (min-width: 1700px) and (max-width: 1800px) {
     .get-start-area-desk {
         left: -210px;
+    }
+    .wellcome_area_payment {
+        background-position: -50% 0;
     }
 }
 @media (min-width: 1400px) and (max-width: 1500px) {
@@ -47,6 +62,9 @@
     }
     .opac8 {
         opacity: 0.8;
+    }
+    .wellcome_area_payment {
+        background-position: 30% 0;
     }
 }
 @media (min-width: 992px) {
@@ -112,6 +130,9 @@
     }
     .header_area {
         padding-right: 10px;
+    }
+    .wellcome_area_payment {
+        background-position: 30% 0;
     }
 }
 @media (min-width: 1099px) and (max-width: 1250px) {
@@ -181,6 +202,10 @@
     .ft-size-12.disp-none-mobile {
         margin-bottom: 0;
     }
+    .wellcome_area_payment {
+        background-position: -20% 0;
+        background-size: cover;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu_area .navbar-brand {
@@ -234,7 +259,8 @@
         margin-top: 35px;
     }
     .wellcome_area_payment {
-        background-position: bottom center;
+        background-position: 22% center;
+        background-size: cover;
     }
     .opac8 {
         opacity: 0.8;
@@ -281,6 +307,10 @@
         height: auto;
         background-position: 80% 50%;
     }
+    .wellcome_area_payment {
+        background-position: 75% center;
+        background-size: cover;
+    }
     .wellcome-heading > h2 {
         color: #d3d5ca;
     }
@@ -310,6 +340,9 @@
     }
     .d-flex-mobile {
         display: flex;
+    }
+    .pad-l15-mobile {
+        padding-left: 15px;
     }
 }
 

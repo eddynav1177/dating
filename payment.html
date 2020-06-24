@@ -23,14 +23,15 @@
     <link href="css/responsive.css?v=2.1" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css" />
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet"/> -->
 
 </head>
-<body>
+<body id="fullpage">
     <div id="preloader">
         <div class="colorlib-load"></div>
     </div>
-    <section class="wellcome_area wellcome_area-desk clearfix wellcome_area_payment" id="home">
+    <section class="wellcome_area wellcome_area-desk clearfix wellcome_area_payment" id="scroll_1">
         <div class="container h-100 fl-left">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-10 col-p-first pad-0 opac8 m-t-150 brd-rad-20 bg-gardien-desk" id="blk_inscription">
@@ -38,7 +39,7 @@
                         <h2>Brunet en ligne</h2>
                     </div> -->
                     <div class="get-start-area get-start-area-desk d-flex flex-wrap get-start-area-payment">
-                        <div class="col-lg-2 col-md-3 col-sm-12 col-12 par-r0 disp-none-mobile">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 disp-none-mobile">
                             <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
                                 <div class="single-team-member" id="single_team_1">
                                     <div class="member-image">
@@ -69,14 +70,45 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <div class="col-lg-3 col-12 disp-none-mobile">
+                            <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
+                                <div class="single-team-member" id="single_team_9">
+                                    <div class="member-image">
+                                        <img src="img/contour-img/contour-23.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
+                                <div class="single-team-member" id="single_team_10">
+                                    <div class="member-image">
+                                        <img src="img/contour-img/contour-20.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
+                                <div class="single-team-member" id="single_team_11">
+                                    <div class="member-image">
+                                        <img src="img/contour-img/contour-19.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
+                                <div class="single-team-member" id="single_team_12">
+                                    <div class="member-image">
+                                        <img src="img/contour-img/contour-27.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-12 col-12 pad-l0 pad-l15-mobile">
                             <div class="card border-0">
                                 <div class="row justify-content-center">
                                     <h3 class="mb-4 text-center">18+ V&eacute;rification s&eacute;curis&eacute;e de l'&acirc;ge</h3>
+                                    <h4 class="mb-4 text-center text-marketing">Pour vous satisfaire</h3>
                                 </div>
                                 <form action="#" method="post">
                                     <div class="row">
-                                        <div class="col-sm-7 border-line pad-0">
+                                        <div class="col-sm-12 pad-0">
                                             <div class="col-sm-12 col-12 d-flex">
                                                 <div class="col-sm-6 col-6">
                                                     <div class='radio mx-auto' data-value="visa"> <img class="fit-image" src="https://i.imgur.com/OdxcctP.jpg" width="105px" height="55px"> </div>
@@ -84,9 +116,6 @@
                                                 <div class="col-sm-6 col-6">
                                                     <div class='radio mx-auto' data-value="master"> <img class="fit-image" src="https://i.imgur.com/WIAP9Ku.jpg" width="105px" height="55px"> </div>
                                                 </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <p class="text-muted text-sm mb-0">Pr&eacute;nom</p> <input type="text" name="prenom" placeholder="Pr&eacute;nom" required>
                                             </div>
                                             <div class="form-group">
                                                 <p class="text-muted text-sm mb-0">Nom</p> <input type="text" name="name" placeholder="Nom" required>
@@ -117,19 +146,19 @@
                                             <div class="form-group">
                                                 <p class="text-muted text-sm mb-0">CVV2</p> <input type="password" name="cvv" placeholder="CVV2" maxlength="4" required>
                                             </div>
+                                            <p class="ft-size-12 disp-none-desk">En complétant cette transaction vous reconnaissez avoir 18 ans ou plus et avoir lu et accepté nos <a href="" class="color-theme" target="_blank">Conditions d’Utilisation</a> ,ainsi que notre <a href="" class="color-theme" target="_blank">Politique de Confidentialité.</a></p>
+                                            <div class="col-12 col-lg-12 text-center m-tb20">
+                                                <div class="sing-up-button">
+                                                    <button type="submit" class="btn submit-btn wd-100">Continuer</button>
+                                                </div>
+                                            </div>                                            
+                                            <p class="ft-size-12 disp-none-mobile">En complétant cette transaction vous reconnaissez avoir 18 ans ou plus et avoir lu et accepté nos <a href="" class="color-theme" target="_blank">Conditions d’Utilisation</a> ,ainsi que notre <a href="" class="color-theme" target="_blank">Politique de Confidentialité.</a></p>
                                         </div>
-                                        <p class="ft-size-12 disp-none-desk">En complétant cette transaction vous reconnaissez avoir 18 ans ou plus et avoir lu et accepté nos <a href="" class="color-theme" target="_blank">Conditions d’Utilisation</a> ,ainsi que notre <a href="" class="color-theme" target="_blank">Politique de Confidentialité.</a></p>
-                                        <div class="col-sm-5 text-sm-center justify-content-center pad-0">
-                                            <div class="sing-up-button">
-                                                <button type="submit" class="btn submit-btn wd-100">Continuer</button>
-                                            </div>
-                                        </div>
-                                        <p class="ft-size-12 disp-none-mobile">En complétant cette transaction vous reconnaissez avoir 18 ans ou plus et avoir lu et accepté nos <a href="" class="color-theme" target="_blank">Conditions d’Utilisation</a> ,ainsi que notre <a href="" class="color-theme" target="_blank">Politique de Confidentialité.</a></p>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-12 par-r0 d-flex-mobile disp-none-desk">
+                        <div class="col-lg-3 col-12 d-flex-mobile disp-none-desk">
                             <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
                                 <div class="single-team-member" id="single_team_5">
                                     <div class="member-image">
@@ -159,7 +188,7 @@
                                 </div>
                             </div>                            
                         </div>
-                        <div class="col-lg-2 col-12 pad-l0 d-flex-mobile">
+                        <div class="col-lg-3 col-12 d-flex-mobile disp-none-desk">
                             <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
                                 <div class="single-team-member" id="single_team_9">
                                     <div class="member-image">
@@ -177,7 +206,7 @@
                             <div class="col-lg-12 col-md-3 col-sm-3 col-3 pad-0">
                                 <div class="single-team-member" id="single_team_11">
                                     <div class="member-image">
-                                        <img src="img/contour-img/contour-26.jpg" alt="">
+                                        <img src="img/contour-img/contour-19.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +227,30 @@
             <img src="img/bg-img/welcome-img.png" alt="">
         </div>
     </section>
-    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features" id="scroll_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center m-t60">
+                        <h2>Conditions générales résumées</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <div class="conditions" id="conditions">
+                        <div class="detail">
+                            Ce service est exclusivement réservé aux personnes majeures. Nos tarifs et conditions sont révisables à tout moment. Nos tarifs et conditions sont révisables à tout moment. Vous pouvez télécharger la version complète des conditions générales en cliquant <a href="http://login-x.com/gts/gts_ch_vod.pdf" target="_blank">ici</a>. L'Accès Club à 1 euro par mois permet d'accéder à la zone membres, inclut jusqu'à 5 lectures de vidéos par mois, et donne la possibilité d'acheter des crédits à la demande. L'Option Gold à 97 euros tous les 2 mois comprends 400 crédits VOD par période, et permet de visualiser toutes les vidéos, photos et chaînes TV en payant le tarif indiqué en crédits. L'option Gold à 97 euros tous les 2 mois comprend 475 crédits, cumulables entre chaque période. En validant cette page vous souscrivez à l’abonnement Club avec l'option Gold. En validant votre commande vous acceptez que l'exécution des services démarre avant l'expiration de votre droit de rétractation. Modalités de l'offre d'essai : vous avez la possibilité de résilier sans frais l’option Gold et l’accès Club (carte bancaire non débitée) pendant les 15 premières minutes de connexion, en vous rendant sur votre profil puis en cliquant sur "Gestion de mon compte". Attention : fermer la page ne vous  désabonne pas. Après la résiliation de l'option Gold, votre accès Club reste actif, et résiliable à tout moment dans la rubrique mon compte. Sans action de votre part pendant la période d'essai, l’abonnement Club avec l’option Gold sera confirmé. Les transactions pourront être groupées en une seule transaction tous les deux mois. Vous pouvez vous désabonner pendant les 15 jours précédents le renouvellement. Si vous ne souhaitez pas souscrire à l’option Pack Gold et n’activer que l’accès Club seul, cliquez <a href="#" class="jsConfirmation">ici</a>. Toute période entamée au-delà de la période d'essai reste due, et ne pourra être remboursée. <br>
+                            En acceptant les conditions générales, vous nous autorisez également à conserver pour une durée illimitée les données associées à cette transaction et à utiliser pour tout paiement futur lié aux abonnements ou à tout autre frais en sus en utilisant nos services tels qu'expliqués dans les paragraphes ci-dessus et en accord avec la politique d'annulation et de remboursement incluse dans les CGV. Si l'un des termes ci-dessus et le présent consentement sont modifiés, vous serez contacté pour être informé du (des) changement(s). Il est donc de votre responsabilité de vous assurer que les coordonnées que vous fournissez sont correctes et de nous communiquer à l'adresse mentionnée dans le pied de page les informations les plus récentes. Vous pouvez retirer ce consentement à tout moment en nous contactant simplement via le formulaire de contact.        <br>
+                            Si vous souhaitez vous abonner vous pouvez exercer votre droit de rétraction en contactant notre service client dans les 14 jours qui suivent votre abonnement.                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-social-icon text-center section_padding_70 clearfix" id="scroll_3">
         <!-- footer logo -->
         <div class="footer-text">
             <h2>Cougar</h2>
@@ -233,5 +285,6 @@
     <script src="js/active.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="js/payment.js"></script>
 </body>

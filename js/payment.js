@@ -44,18 +44,17 @@ $(document).ready(function() {
     
         this.value = this.lastValue = parts.join('/');
         this.selectionStart = this.selectionEnd = caretPosition;
-    }    
+    }
 
-    /*$('#fullpage').fullpage({
-        navigation: true,
-        responsiveWidth: 700,
-        anchors: ['home', 'about-us', 'contact'],
-        parallax: true,
-        onLeave: function(origin, destination, direction){
-            console.log("Leaving section" + origin.index);
-        },
-    });*/
-
-    
-
+    // var myFullpage = new fullpage('#fullpage', {
+    //     verticalCentered: false
+    // });
+    $(window).on('scroll', function(e) {
+        var scroll_top = $(this).scrollTop();
+        if (scroll_top >= 0 && scroll_top <= 90) {
+            $("#section_cgv").addClass('hide');
+        } else {
+            $("#section_cgv").removeClass('hide');
+        }
+    });
 });

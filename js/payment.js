@@ -34,11 +34,10 @@ $(document).ready(function() {
 
     $(window).on('scroll', function(e) {
         var scroll_top = $(this).scrollTop();
-        if (scroll_top >= 0 && scroll_top <= 90) {
+        if (scroll_top == 0) {
             $("#section_cgv").addClass('hide');
         } else {
             $("#section_cgv").removeClass('hide');
         }
-    });
-    
+    });    
 });

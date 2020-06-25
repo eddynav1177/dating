@@ -2,6 +2,9 @@
     .get-start-area-desk {
         left: -1830px;
     }
+    .wellcome_area_payment {
+        background-size: cover;
+    }
 }
 @media (min-width: 2401px) and (max-width: 3400px) {
     .get-start-area-desk {
@@ -85,6 +88,9 @@
     .bg-gardien-desk {
         background: linear-gradient(to left, #ebede2, #6c6473);
         margin-left: 2px;
+    }
+    .d-flex-desk {
+        display: flex;
     }
 }
 @media (min-width: 1300px) and (max-width: 1399px) {

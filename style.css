@@ -509,9 +509,9 @@ a.color-theme {
     font-weight: 700;
     position: relative;
     z-index: 3;
-    text-decoration: underline;
-    text-decoration-color: #fff;
-    text-decoration-style: wavy;
+    /* text-decoration: underline; */
+    /* text-decoration-color: #fff; */
+    /* text-decoration-style: wavy; */
 }
 
 .m-tb20 {

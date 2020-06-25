@@ -448,9 +448,6 @@
     .disp-block-mobile {
         display: flex;
     }
-    /*.wellcome_area_payment {
-        background-position: bottom center;
-    }*/
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

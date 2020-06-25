@@ -416,7 +416,7 @@ a.color-theme {
     text-align: center;
 }
 
-/* stcicky css */
+/* sticky css */
 
 .header_area.sticky {
     background-color: #6c6473;
@@ -1544,4 +1544,11 @@ span.status {
 .ui-widget-header {
     border: none !important;
     background: none !important;
+}
+
+.m-t30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
 }

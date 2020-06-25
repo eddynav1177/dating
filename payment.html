@@ -111,7 +111,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- TODO : Blocs photos qui s'affichent sur la version desktop seulement -->
                         <div class="col disp-none-mobile">
                             <div class="col-lg-12 col-md-4 col-sm-4 col-4 pad-0">
                                 <div class="single-team-member" id="single_team_9">
@@ -149,7 +148,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- TODO : Blocs photos qui s'affichent sur la version desktop seulement -->
                         <div class="col disp-none-mobile">
                             <div class="col-lg-12 col-md-4 col-sm-4 col-4 pad-0">
                                 <div class="single-team-member" id="single_team_1">
@@ -206,7 +204,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <p class="text-muted text-sm mb-0">Nom</p> <input type="text" name="name" placeholder="Nom" required>
+                                                <p class="text-muted text-sm mb-0">Nom</p> <input type="text" name="name" id="nom" placeholder="Nom" required>
                                             </div>
                                             <div class="form-group">
                                                 <p class="text-muted text-sm mb-0">Num&eacute;ro de la carte</p>
@@ -232,7 +230,8 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <p class="text-muted text-sm mb-0">CVV2</p> <input type="password" name="cvv" placeholder="CVV2" maxlength="4" required>
+                                                <p class="text-muted text-sm mb-0">CVV2</p> 
+                                                <input type="password" name="cvv" id="cvv" placeholder="CVV2" maxlength="3" minlength="3" required>
                                             </div>
                                             <p class="ft-size-12 disp-none-desk">En complétant cette transaction vous reconnaissez avoir 18 ans ou plus et avoir lu et accepté nos <a href="" class="color-theme" target="_blank">Conditions d’Utilisation</a> ,ainsi que notre <a href="" class="color-theme" target="_blank">Politique de Confidentialité.</a></p>
                                             <div class="col-12 col-lg-12 text-center m-tb20">
@@ -400,16 +399,15 @@
                 </div>
             </div>
         </div>
-        <!-- Welcome thumb -->
         <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
             <img src="img/bg-img/welcome-img.png" alt="">
         </div>
     </section>
-    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix hide wow fadeInUp" id="section_cgv" data-wow-delay="0.3s">
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix hide fadeInUp" id="section_cgv" data-wow-delay="0.3s">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-heading text-center m-t60">
+                    <div class="section-heading text-center m-t30 mb-30">
                         <h2>Nos conditions générales de ventes</h2>
                         <div class="line-shape"></div>
                     </div>
@@ -447,19 +445,12 @@
             <p>Copyright ©2020 Cougar. Designed by <a href="" target="_blank">Cougar</a></p>
         </div>
     </footer>
-    <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
     <script src="js/popper.min.js"></script>
-    <!-- Bootstrap-4 Beta JS -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins JS -->
     <script src="js/plugins.js"></script>
-    <!-- Slick Slider Js-->
     <script src="js/slick.min.js"></script>
-    <!-- Footer Reveal JS -->
     <script src="js/footer-reveal.min.js"></script>
-    <!-- Active JS -->
     <script src="js/active.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
